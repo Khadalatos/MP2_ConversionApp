@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Tumbal</string>
+    <string name="lingma_logo_description">Logo Lingmation Studio</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="lingmation_studio_app">Lingmation Studio App</string>
+    <string name="lingmation_studio">Lingmation Studio</string>
+    <string name="created_by">Created by</string>
+    <string name="username_title">Username</string>
+    <string name="password_title">Password</string>
+    <string name="lupa_password">Lupa Password</string>
+    <string name="buat_akun_baru">Buat Akun Baru</string>
+    <string name="login">Login</string>
+    <string name="suhu">Suhu</string>
+    <string name="jarak">Jarak</string>
+    <string name="massa">Massa</string>
+    <string name="waktu">Waktu</string>
+    <string name="menu_konversi">MENU KONVERSI</string>
+    <string name="buka_suhu_activity">Buka Suhu Activity</string>
+    <string name="image_description">\n</string>
+    <string name="konversi">Konversi</string>
+    <string name="masukan_jarak">Masukan Jarak</string>
+    <string name="konversi_jarak">KONVERSI JARAK</string>
+    <string name="input_angka_jarak">Input Angka Jarak</string>
+    <string name="hasil">Hasil</string>
+    <string name="pilih_jarak">Pilih Jarak</string>
+    <string name="konversi_massa">KONVERSI MASSA</string>
+    <string name="pilih_massa">Pilih Massa</string>
+    <string name="input_angka_massa">Input Angka Massa</string>
+    <string name="masukan_massa">Masukan Massa</string>
+    <string name="konversie">Konversi</string>
+    <string name="eee">Hasil</string>
+
+</resources>

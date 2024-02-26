@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView untuk "MENU KONVERSI" -->
+    <TextView
+        android:id="@+id/textViewMenuKonversi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/menu_konversi"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Container untuk Gambar 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMenuKonversi"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- Gambar 1 -->
+        <RelativeLayout
+            android:id="@+id/imageContainer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:onClick="openSuhuActivity"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/temperaturelogo"
+                android:clickable="true"
+                android:onClick="openSuhuActivity"
+                android:focusable="true"
+                android:contentDescription="@string/buka_suhu_activity" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/suhu" />
+
+        </RelativeLayout>
+
+        <!-- Gambar 2 -->
+        <RelativeLayout
+            android:id="@+id/imageContainer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:onClick="openDistanceActivity"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pathlogo"
+                android:onClick="openDistanceActivity"
+                android:contentDescription="@string/image_description" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/jarak" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- Container untuk Gambar 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMenuKonversi"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- Gambar 3 -->
+        <RelativeLayout
+            android:id="@+id/imageContainer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:onClick="openMassaActivity"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/beratlogo"
+                android:clickable="true"
+                android:onClick="openMassaActivity"
+                android:focusable="true"
+                android:contentDescription="@string/buka_suhu_activity"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/massa" />
+
+        </RelativeLayout>
+
+        <!-- Gambar 4 -->
+        <RelativeLayout
+            android:id="@+id/imageContainer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:onClick="openWaktuActivity"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/timelogo"
+                android:clickable="true"
+                android:onClick="openWaktuActivity"
+                android:focusable="true"
+                android:contentDescription="@string/username_title"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/waktu" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

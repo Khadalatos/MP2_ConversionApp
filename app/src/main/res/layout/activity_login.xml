@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Logo Lingmation -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logolingma"
+        />
+
+    <!-- TextView untuk "Lingmation Studio App" -->
+    <TextView
+        android:id="@+id/textViewAppLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/lingmation_studio_app"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" /> <!-- Ubah ukuran teks sesuai kebutuhan -->
+
+    <!-- TextView untuk "Masuk atau Buat Akun Baru" -->
+    <TextView
+        android:id="@+id/textViewLoginOrCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Masuk atau "
+        android:textColor="@android:color/white" />
+
+    <!-- Menggunakan span untuk membuat "Buat Akun Baru" menjadi hyperlink -->
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAppLabel"
+        android:layout_toEndOf="@id/textViewLoginOrCreateAccount"
+        android:layout_marginTop="16dp"
+        android:text="@string/buat_akun_baru"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <!-- TextView untuk "Username" -->
+    <TextView
+        android:id="@+id/textViewUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLoginOrCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/username_title"
+        android:textColor="@android:color/white" />
+
+    <!-- EditText untuk Username -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsernameLabel"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/username_title"
+        android:padding="12dp"
+        android:inputType="text"
+        android:autofillHints="username"/>
+
+    <!-- TextView untuk "Password" -->
+    <TextView
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:text="@string/password_title"
+        android:textColor="@android:color/white" />
+
+    <!-- EditText untuk Password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPasswordLabel"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:padding="12dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Tulisan "Created by Lingmation Studio" -->
+    <TextView
+        android:id="@+id/textViewCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:text="@string/created_by"
+        android:textColor="@android:color/black" />
+
+    <!-- Menggunakan span untuk membuat "Lingmation Studio" menjadi bold -->
+    <TextView
+        android:id="@+id/textViewStudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/textViewCreated"
+        android:text="@string/lingmation_studio"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- Button untuk Login -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStudio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#FFA500"
+        android:text="@string/login"
+        android:textColor="@android:color/white"/>
+
+    <!-- TextView untuk "Lupa Password" -->
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/lupa_password"
+        android:textColor="@android:color/white"
+         />
+
+</RelativeLayout>
