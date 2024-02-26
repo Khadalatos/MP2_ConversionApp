@@ -1,2 +1,11 @@
 # Mobile Programming 2 Linggar H Lingmation Studio
- Penugasan Mobile Programming 2, pembuatan aplikasi android.
+25 Februari
+Commit Tugas Mobile Programming 2
+-Splash Screen
+-Login
+-Menu
+-Konversi 
+_Suhu
+_Jarak
+_Massa
+_Waktu
